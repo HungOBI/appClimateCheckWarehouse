@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85149413352",
+    "project_id": "climatecheckwarehouse",
+    "storage_bucket": "climatecheckwarehouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85149413352:android:7470705141108a0fa0fe5d",
+        "android_client_info": {
+          "package_name": "com.example.appclimatecheckwarehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85149413352-dlhqtkpbv4m5t4fatcr0vrfe3f7milj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9pfizH-NbzgOIpWRj_qrSWtaNSZ7kifs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85149413352-dlhqtkpbv4m5t4fatcr0vrfe3f7milj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

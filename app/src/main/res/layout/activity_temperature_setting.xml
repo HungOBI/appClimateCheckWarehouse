@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8298C5"
+    tools:context=".TemperatureSettingActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_back"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        tools:text="ROOM 1"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/primary"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_tt"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/layout_temrature"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="40"
+                android:textSize="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/im_temperature"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_temperature"
+                android:layout_toRightOf="@+id/tv_temperature"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_tprtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:gravity="center"
+                android:text="Temperature"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/primary"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_humidity"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:layout_toRightOf="@+id/layout_temrature"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_hmdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/audiowide"
+                android:gravity="center"
+                android:text="Humidity"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/primary"
+                />
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="40"
+                android:textSize="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/img_humidity"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_humidity"
+                android:layout_toRightOf="@+id/tv_humidity"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_fan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout_tt"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layout_increase"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/img_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_decrease" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout_increase"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/img_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_increase"
+                android:padding="5dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layout_fan"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/tv_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="30%"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primary"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
