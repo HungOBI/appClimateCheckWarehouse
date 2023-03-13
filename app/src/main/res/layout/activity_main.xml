@@ -5,13 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#86D4E8"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@drawable/ic_back" />
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_logout"
+        android:layout_toLeftOf="@+id/img_sort"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:hint="Search Room name"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/img_sort"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_sort"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv"
-        android:layout_marginTop="50dp"
+        android:id="@+id/room_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp" />
 
 
 </RelativeLayout>

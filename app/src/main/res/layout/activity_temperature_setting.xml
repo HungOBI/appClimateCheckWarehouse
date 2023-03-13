@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8298C5"
-    tools:context=".TemperatureSettingActivity">
+    tools:context=".activity.TemperatureSettingActivity">
 
     <ImageView
         android:id="@+id/img_back"
@@ -45,8 +45,8 @@
                 android:id="@+id/tv_temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="40"
-                android:textSize="70dp"
+                tools:text="20"
+                android:textSize="40dp"
                 android:layout_marginLeft="30dp"
                 android:layout_centerVertical="true"/>
 
@@ -99,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="40"
-                android:textSize="70dp"
+                android:textSize="40dp"
                 android:layout_marginLeft="30dp"
                 android:layout_centerVertical="true"/>
 
@@ -155,8 +155,8 @@
 
     <RelativeLayout
         android:layout_centerHorizontal="true"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:layout_below="@id/layout_fan"
         android:background="@drawable/border">

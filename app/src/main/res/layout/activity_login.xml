@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
     <ImageView
         android:id="@+id/imageViewBannerSignIn"
         android:layout_width="400dp"
@@ -105,6 +105,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in"
         app:layout_constraintVertical_bias="0.85"
-        android:textColor="@color/black"
-        android:text="Don't have an account?Register" />
+        tools:text="Don't have an account?Register" />
 </androidx.constraintlayout.widget.ConstraintLayout>
